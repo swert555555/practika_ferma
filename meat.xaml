@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfPract1.meat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPract1"
+        mc:Ignorable="d"
+        Title="meat" Height="350" Width="600" MinHeight="250" MinWidth="500" MaxHeight="350" MaxWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name = "Meat_DataGrid" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" SelectionChanged="Meat_DataGrid_SelectionChanged"/>
+        <Button Content="назад" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="30 10" Width="50" Height="20" Click="Button_Click"/>
+        <Button Content="добавить" HorizontalAlignment="Left" Margin="30 10" VerticalAlignment="Bottom" Width="90" Click="Button_Click_1"/>
+        <TextBlock Text="имя" HorizontalAlignment="Left" Margin="30 87" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="30 70" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="90"/>
+        <TextBlock Text="номер" HorizontalAlignment="Left" Margin="30 57" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="number" HorizontalAlignment="Left" Margin="30 40" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="90"/>
+        <Button Content="изменить" HorizontalAlignment="Left" Margin="130 10" VerticalAlignment="Bottom" Width="90" Click="Button_Click_3"/>
+        <Button Content="удалить" HorizontalAlignment="Left" Margin="230 10" VerticalAlignment="Bottom" Width="90" Click="Button_Click_2"/>
+    </Grid>
+</Window>
